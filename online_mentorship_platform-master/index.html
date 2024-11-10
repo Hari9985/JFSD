@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Mentorship Platform</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/e2eb231d20.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="section1">
+        <nav>
+            <ul class="left">
+              <a href="index.html" class="logo">CGCP</a>
+            </ul>
+            <ul class="right">
+              <li><a class="navcolor" href="mentors.html">Find a mentor</a></li>
+              <li><a class="navcolor" href="become_a_mentor.html">Become a mentor</a></li>
+              <a href="login.html"><input type="button" value="sign in" class="login" /></a>
+              <a href="signup.html"><input type="button" value="sign up" class="sign" /></a>
+            </ul>
+          </nav>
+          <div class="content">
+           <div class="w3-bar w3-black">
+            <button class="w3-bar-item w3-button" id="btn1" onclick="openUser('Mentee')">Mentee</button>
+            <button class="w3-bar-item w3-button" id='btn2' onclick="openUser('Mentor')">Mentor</button>
+          </div>
+          <div id="Mentee" class="user">
+           <h2>learn and grow with help from <br> world-class mentors</h2>
+           <p>book and meet over <b>4,500+</b> mentors for 1:1 <br> setions in our global community.</p>
+        <div class="search"> 
+            <i class="fa-solid fa-magnifying-glass" id="mag_glass"></i>
+            <input
+              type="text"
+              id="search"
+              placeholder="Search by title, country or role"/>
+            <div class="select">
+              <label for="expertise"></label>
+               <select name="expertise" id="pick">
+                <option value="">Expertise</option>
+                <option value="">Design</option>
+                <option value="">Marketing</option>
+                <option value="">Product Management</option>
+                <option value="">Product Research</option>
+                <option value="">Software Development</option>
+               </select>
+               
+            </div>
+            <div class="select" id="select_2">
+              <label for="country"></label>
+               <select name="country" id="pick">
+                <option value="">country</option>
+                <option value=""></option>
+                <option value="">Marketing</option>
+                <option value="">Product Management</option>
+                <option value="">Product Research</option>
+                <option value="">Software Development</option>
+               </select>
+            </div>
+            <input type="submit" value="Submit" id="search_btn">
+          </div>
+        </div>
+         
+         <div id="Mentor" class="user" style="display:none">
+           <h2>your next chapter, made <br> possible by mentoring.</h2>
+           <p> build confidence as a leader, grow your network, and <br> define your
+            legacy</p>
+            <button id="btn3">become a mentor</button>
+         </div>
+      
+      
+        <script src="index.js"></script>
+    </section>
+    <section class="section2">
+      <div class="sec_3_bg">
+        <h2>services offered <br> by our platform</h2>
+        <div class="services">
+          <div class="jsca">
+            <h4>career advice</h4>
+            <p>we help you navigate the <br> uncertainityof your career path</p>
+            <button>explore service</button>
+          </div>
+          <div class="jsca">
+            <h4>skills</h4>
+            <!-- <div class="rode"></div> -->
+            <p>with top class mentors we help <br> develope and nature your skills.</p>
+            <button>explore service</button>
+          </div>
+          <div class="jsca">
+            <h4>job search</h4>
+           <p>we provide access to some of <br> the best CVs and internships</p>
+           <button>explore service</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section3">
+      <div class="book">
+        <h5><strong>Book 1:1 Sessions </strong><br> Schedule a session and work with some of the best people in your<br>  filed of interest, do not be left behinde sign up and start shaping up your future.</h5>
+        
+        <a href="mentors.html"><button>explore mentors</button></a>
+      </div>
+      <div class="group">
+        <h5><strong>Join Group Sessions</strong><br> Don't have specific questions or goals? Hop into a group session where <br> mentors share advice and host discussions on any range of topics.</h5>
+        
+        
+        <button>Explore group Sessions</button>
+      </div>
+    </section>
+    <section class="section4">
+      <div class="fixed">
+        <h3>Discover great mentors</h3>
+        <a href="mentors.html">explore</a>
+      </div>
+  <div id="section4">
+    <div class="profile_container">
+      <div class="profile1" id="headshot">
+        <div class="fa">
+           <i class="fa-solid fa-plus"> 14</i>
+           <i class="fa-solid fa-heart"></i>
+        </div>
+          <div class="bottom">
+             <h4>A.P.J.Abdul Kalam<br> <b>Former President of India</b> </h4>  
+            <div class="bottom_link">
+                 <i class="fa-solid fa-briefcase"></i>experience
+             </div>
+             <br>
+            <div class="bottom_link">
+                <i class="fa-solid fa-message"></i>area of expertise
+            </div>
+          </div>
+      </div>
+      <div class="profile2" id="headshot">
+        <div class="fa">
+           <i class="fa-solid fa-plus"> 14</i>
+           <i class="fa-solid fa-heart"></i>
+        </div>
+          <div class="bottom">
+             <h4>Sudha Murty<br> <b>Member of Rajya Sabha</b> </h4>  
+            <div class="bottom_link">
+                 <i class="fa-solid fa-briefcase"></i>experience
+             </div>
+             <br>
+            <div class="bottom_link">
+                <i class="fa-solid fa-message"></i>area of expertise
+            </div>
+          </div>
+      </div>
+      <div class="profile3" id="headshot">
+        <div class="fa">
+           <i class="fa-solid fa-plus"> 14</i>
+           <i class="fa-solid fa-heart"></i>
+        </div>
+          <div class="bottom">
+             <h4>Kiran Bedi<br> <b>Former Lieutenant Governor of Puducherry</b> </h4>  
+            <div class="bottom_link">
+                 <i class="fa-solid fa-briefcase"></i>experience
+             </div>
+             <br>
+            <div class="bottom_link">
+                <i class="fa-solid fa-message"></i>area of expertise
+            </div>
+          </div>
+      </div>
+      <div class="profile4" id="headshot">
+        <div class="fa">
+           <i class="fa-solid fa-plus"> 14</i>
+           <i class="fa-solid fa-heart"></i>
+        </div>
+          <div class="bottom" id="headshot">
+             <h4>Sundar Pichai<br> <b>CEO of Google</b> </h4>  
+            <div class="bottom_link">
+                 <i class="fa-solid fa-briefcase"></i>experience
+             </div>
+             <br>
+            <div class="bottom_link">
+                <i class="fa-solid fa-message"></i>area of expertise
+            </div>
+          </div>
+      </div>
+      <div class="profile5" id="headshot">
+        <div class="fa">
+           <i class="fa-solid fa-plus"> 14</i>
+           <i class="fa-solid fa-heart"></i>
+        </div>
+          <div class="bottom">
+             <h4>giovanni Oduor <br> <b>Civil engineering</b> </h4>  
+            <div class="bottom_link">
+                 <i class="fa-solid fa-briefcase"></i>experience
+             </div>
+             <br>
+            <div class="bottom_link">
+                <i class="fa-solid fa-message"></i>area of expertise
+            </div>
+          </div>
+      </div>
+      <div class="profile6" id="headshot">
+        <div class="fa">
+           <i class="fa-solid fa-plus"> 14</i>
+           <i class="fa-solid fa-heart"></i>
+        </div>
+          <div class="bottom">
+             <h4>Kapil Dev<br> <b>Indian former cricketer</b> </h4>  
+            <div class="bottom_link">
+                 <i class="fa-solid fa-briefcase"></i>experience
+             </div>
+             <br>
+            <div class="bottom_link">
+                <i class="fa-solid fa-message"></i>area of expertise
+            </div>
+          </div>
+      </div>
+      <div class="profile7" id="headshot">
+        <div class="fa">
+           <i class="fa-solid fa-plus"> 14</i>
+           <i class="fa-solid fa-heart"></i>
+        </div>
+          <div class="bottom">
+             <h4>Ratan Naval Tata<br> <b>Former chairperson of the Tata Group</b> </h4>  
+            <div class="bottom_link">
+                 <i class="fa-solid fa-briefcase"></i>experience
+             </div>
+             <br>
+            <div class="bottom_link">
+                <i class="fa-solid fa-message"></i>area of expertise
+            </div>
+          </div>
+      </div>
+      <div class="profile8" id="headshot">
+        <div class="fa">
+           <i class="fa-solid fa-plus"> 14</i>
+           <i class="fa-solid fa-heart"></i>
+        </div>
+          <div class="bottom">
+             <h4>Nirmala Sitharaman<br> <b>Minister of Corporate Affairs of India</b> </h4>  
+            <div class="bottom_link">
+                 <i class="fa-solid fa-briefcase"></i>experience
+             </div>
+             <br>
+            <div class="bottom_link">
+                <i class="fa-solid fa-message"></i>area of expertise
+            </div>
+          </div>
+      </div>
+      <div class="profile9" id="headshot">
+        <div class="fa">
+           <i class="fa-solid fa-plus"> 14</i>
+           <i class="fa-solid fa-heart"></i>
+        </div>
+          <div class="bottom">
+             <h4>Saina Nehwal<br> <b>Indian Badminton Player</b> </h4>  
+            <div class="bottom_link">
+                 <i class="fa-solid fa-briefcase"></i>experience
+             </div>
+             <br>
+            <div class="bottom_link">
+                <i class="fa-solid fa-message"></i>area of expertise
+            </div>
+          </div>
+      </div>
+      <div class="profile10" id="headshot">
+        <div class="fa">
+           <i class="fa-solid fa-plus"> 14</i>
+           <i class="fa-solid fa-heart"></i>
+        </div>
+          <div class="bottom">
+             <h4>Narayana Murthy<br> <b>Indian entrepreneur</b> </h4>  
+            <div class="bottom_link">
+                 <i class="fa-solid fa-briefcase"></i>experience
+             </div>
+             <br>
+            <div class="bottom_link">
+                <i class="fa-solid fa-message"></i>area of expertise
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+      
+<div class="testimonials">
+ <div class="suspend">
+  <i class="fa fa-quote-left fa-4x" aria-hidden="true" id="biggie" ></i>
+  <div class="content_holder">
+    <h4>connect with <br> other members</h4>
+    <p>for a better understanding and <br> a deeper look into our services <br> before commiting to the programm.</p>
+    <a href="">connect now</a>
+  </div>
+    <div class="ts_pics_holder">
+      <div class="ts_pics">
+        <div class="blur_bottom">
+          <i class="fa fa-quote-left" aria-hidden="true" id="inner_quote"></i>
+        <h4>Rohit Sharma</h4>
+        <p>Crickter</p>
+        </div>
+      </div>
+      <div class="ts_pics2">
+        <div class="blur_bottom" id="bm_2">
+          <i class="fa fa-quote-left" aria-hidden="true" id="inner_quote"></i>
+        <h4>Nick Vujicic</h4>
+        <p>Motivational Speaker</p>
+        </div>
+      </div>
+      <div class="ts_pics3" id="bm_3">
+        <div class="blur_bottom">
+          <i class="fa fa-quote-left" aria-hidden="true" id="inner_quote"></i>
+        <h4>Raja Mouli</h4>
+        <p>Director</p>
+        </div>
+      </div>
+    </div>
+ </div>
+</div>
+    <section class="section5">
+        <div class="footer">
+            <div id="footer">
+                
+                <p>Your trusted source to find highly-vetted mentors<br>& industry professionals to move your career<br>ahead</p>
+                <img src="./assets/icons/fb1.png" alt="">
+                <img src="./assets/icons/insta1.jpg" alt="">
+                <img src="./assets/icons/twiter1.png" alt="">
+                <img src="./assets/icons/in.png" alt="">
+            </div>
+            <div id="footer1">
+                <h2 class="h2">PLATFORM</h2>
+                <p>Browse Mentors</p>
+                <p>Book a Session</p>
+                <p>Become a Mentor</p>
+                <p>Mentorship for Teams</p>
+                <p>Mentor Groups</p>
+            </div>
+            <div id="footer2">
+                <h2 class="h2">RESOURCES</h2>
+                <p>Newsletter</p>
+                <p>Case Studies</p>
+                <p>Porks</p>
+                <p>Testimonials</p>
+                <p>Blog</p>
+            </div>
+            <div id="footer3">
+                <h2 class="h2">COMPANY</h2>
+                <p>About</p>
+                <p>Partner Program</p>
+                <p>Write For Us</p>
+                <p>Code of Conduct</p>
+                <p>Privacy Policy</p>
+            </div>
+            <div id="footer4">
+                <h2 class="h2">SUPPORT</h2>
+                <p>FAQ</p>
+                <p>Contact</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
